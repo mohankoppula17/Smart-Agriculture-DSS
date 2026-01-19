@@ -1,4 +1,4 @@
-# 🌾 Crop and Profit Re
+# 🌾 Crop and Profit Recommendation for Sustainable Farming
 
 A Decision Support System (DSS) that recommends **the top 3 crops** based on
 **climate conditions, land area, expected profit, and risk level** using
