@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os
 
 # --------------------------------------------------
 # Page Configuration
@@ -50,11 +51,11 @@ div[data-testid="stMetric"] {
 # --------------------------------------------------
 # Load Models & Data
 # --------------------------------------------------
-reg_model = joblib.load("profit_model.pkl")
-clf_model = joblib.load("profit_classifier.pkl")
-label_encoder = joblib.load("label_encoder.pkl")
+reg_model = joblib.load("models/profit_model.pkl")
+clf_model = joblib.load("models/profit_classifier.pkl")
+label_encoder = joblib.load("models/label_encoder.pkl")
 
-data = pd.read_csv("merged_data.csv")
+data = pd.read_csv("data/merged_data.csv")
 
 # --------------------------------------------------
 # Header Section
